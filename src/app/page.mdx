@@ -1,0 +1,28 @@
+import { SparkleIcon } from '@/components/SparkleIcon'
+
+export { Layout as default } from '@/components/Layout'
+
+---
+
+![](@/images/commit-suggestions.png)
+
+## RecallAI {{ date: '2024-01-07T00:00Z' }}
+
+### Introduction
+RecallAI is poised to revolutionize the way we capture and recall our digital interactions. By harnessing real-time activity as data, RecallAI creates an artificial memory that mirrors human recollection.
+
+### Capturing Real-Time Activity as Data
+Our approach emulates the human brain's method of storing information through visual and auditory stimuli. We've engineered a system that enables a computer to 'see' and 'listen' by implementing audio-visual screen recording. Specifically, we've automated screenshot captures every 1 to 2 seconds and continuous audio recording.
+
+
+### Constructing a Rich DataSet
+How do we transform this multimedia information into a structured format for the computer? Our solution is to utilize text, leveraging the latest advancements in Natural Language Processing (NLP) to create a versatile and robust artificial memory system.
+Each recorded screenshot and audio segment is automatically processed and stored in a local SQLITE database. This data is then transcribed into text and associated with each image in the database. This not only includes the content but also the date, time, and additional metadata, providing a comprehensive context for each captured moment.
+
+For each Screenshot and recorded audio, I have automated its data by adding them into a local database (SQLITE) to store their transcriptions on it. 
+For each image given in a column of the DB, it will have its text transcribed onto it. Knowing that the software takes a complete screen of the computer, we will also have the date, the time, and more information allowing us to trace back our events.
+Now we have a database filled with textual data transcribed from the audio and screenshots allowing us to proceed to the next step, using embedding on our data to do Semantic Search.
+
+### Towards Semantic Search
+With a database enriched with textual transcriptions of audio and visual data, we move to the next phase: employing data embedding techniques for Semantic Search. This will enable intuitive and context-aware retrieval of information, mirroring the way we naturally recall our experiences.
+By continuously refining our approach to data capture and retrieval, RecallAI is setting new standards for digital memory, making it as intuitive and accessible as human recollection.
